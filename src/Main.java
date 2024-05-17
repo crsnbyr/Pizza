@@ -44,6 +44,23 @@ public class Main {
         ));
         recipes.put("american", americanRecipes);
 
+        // Italian recipes
+        Map<String, List<Recipe>> italianRecipes = new HashMap<>();
+        italianRecipes.put("breakfast", Arrays.asList(
+                new Recipe("Frittata", Arrays.asList("eggs", "cheese", "vegetables"), 20, "An Italian omelette made with eggs and various fillings.")
+        ));
+        italianRecipes.put("brunch", Arrays.asList(
+                new Recipe("Bruschetta", Arrays.asList("bread", "tomatoes", "garlic", "olive oil"), 15, "Toasted bread topped with diced tomatoes, garlic, and olive oil.")
+        ));
+        italianRecipes.put("lunch", Arrays.asList(
+                new Recipe("Spaghetti Carbonara", Arrays.asList("spaghetti", "bacon", "eggs", "Parmesan cheese"), 20, "A classic Italian pasta dish made with eggs, cheese, and pancetta or bacon."),
+                new Recipe("Caprese Salad", Arrays.asList("tomatoes", "mozzarella cheese", "basil", "olive oil"), 10, "A simple salad made with tomatoes, mozzarella cheese, and fresh basil leaves.")
+        ));
+        italianRecipes.put("dinner", Arrays.asList(
+                new Recipe("Margherita Pizza", Arrays.asList("pizza dough", "tomatoes", "mozzarella cheese", "basil"), 15, "A simple yet delicious pizza topped with tomatoes, cheese, and fresh basil leaves."),
+                new Recipe("Chicken Alfredo", Arrays.asList("chicken", "fettuccine pasta", "cream sauce"), 25, "Creamy pasta dish made with chicken, fettuccine, and Alfredo sauce.")
+        ));
+        recipes.put("italian", italianRecipes);
         // Japanese recipes
         Map<String, List<Recipe>> japaneseRecipes = new HashMap<>();
         japaneseRecipes.put("breakfast", Arrays.asList(
@@ -63,24 +80,6 @@ public class Main {
                 new Recipe("Ramen", Arrays.asList("noodles", "broth", "egg", "pork"), 45, "A popular noodle soup dish originating from Japan.")
         ));
         recipes.put("japanese", japaneseRecipes);
-
-        // Italian recipes
-        Map<String, List<Recipe>> italianRecipes = new HashMap<>();
-        italianRecipes.put("breakfast", Arrays.asList(
-                new Recipe("Frittata", Arrays.asList("eggs", "cheese", "vegetables"), 20, "An Italian omelette made with eggs and various fillings.")
-        ));
-        italianRecipes.put("brunch", Arrays.asList(
-                new Recipe("Bruschetta", Arrays.asList("bread", "tomatoes", "garlic", "olive oil"), 15, "Toasted bread topped with diced tomatoes, garlic, and olive oil.")
-        ));
-        italianRecipes.put("lunch", Arrays.asList(
-                new Recipe("Spaghetti Carbonara", Arrays.asList("spaghetti", "bacon", "eggs", "Parmesan cheese"), 20, "A classic Italian pasta dish made with eggs, cheese, and pancetta or bacon."),
-                new Recipe("Caprese Salad", Arrays.asList("tomatoes", "mozzarella cheese", "basil", "olive oil"), 10, "A simple salad made with tomatoes, mozzarella cheese, and fresh basil leaves.")
-        ));
-        italianRecipes.put("dinner", Arrays.asList(
-                new Recipe("Margherita Pizza", Arrays.asList("pizza dough", "tomatoes", "mozzarella cheese", "basil"), 15, "A simple yet delicious pizza topped with tomatoes, cheese, and fresh basil leaves."),
-                new Recipe("Chicken Alfredo", Arrays.asList("chicken", "fettuccine pasta", "cream sauce"), 25, "Creamy pasta dish made with chicken, fettuccine, and Alfredo sauce.")
-        ));
-        recipes.put("italian", italianRecipes);
 
         // Gather user preferences
         System.out.println("Welcome to the Recipe App!");
@@ -131,7 +130,16 @@ public class Main {
         System.out.println("Ingredients: " + recipe.getIngredients());
         System.out.println("Cooking Time: " + recipe.getCookingTime() + " minutes");
         System.out.println("Description: " + recipe.getDescription());
-        // Add ASCII art
+        System.out.println(" __       ___,.-------..__        __");
+        System.out.println("//\\ _,-''                `'--._ //\\");
+        System.out.println("\\ ;'                           `: //");
+        System.out.println("`(                               )'");
+        System.out.println(":.                           ,;");
+        System.out.println("`.`--.___           ___.--','");
+        System.out.println("`.     ``-------''     ,'");
+        System.out.println("        -.               ,-");
+        System.out.println("          `-._______.-'");
+        //this art is supposed to be a bowl
     }
 }
 
