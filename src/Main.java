@@ -6,6 +6,25 @@ public class Main {
         // Define recipes for different cultures
         Map<String, Map<String, List<Recipe>>> recipes = new HashMap<>();
 
+
+        // Chinese recipes
+        Map<String, List<Recipe>> chineseRecipes = new HashMap<>();
+        chineseRecipes.put("breakfast", Arrays.asList(
+                new Recipe("Chinese Scallion Pancakes", Arrays.asList("flour", "scallions", "oil"), 20, "Savory pancakes made with flour and scallions.")
+        ));
+        chineseRecipes.put("brunch", Arrays.asList(
+                new Recipe("Dim Sum", Arrays.asList("dumplings", "buns", "shrimp balls"), 30, "Assorted bite-sized Chinese dishes, often served with tea.")
+        ));
+        chineseRecipes.put("lunch", Arrays.asList(
+                new Recipe("General Tso's Chicken", Arrays.asList("chicken", "soy sauce", "sugar"), 25, "A popular Chinese-American dish featuring deep-fried chicken in a sweet and spicy sauce."),
+                new Recipe("Hot and Sour Soup", Arrays.asList("tofu", "mushrooms", "bamboo shoots", "vinegar"), 20, "A tangy and spicy soup made with tofu, mushrooms, and other ingredients.")
+        ));
+        chineseRecipes.put("dinner", Arrays.asList(
+                new Recipe("Kung Pao Chicken", Arrays.asList("chicken", "peanuts", "vegetables"), 25, "A spicy stir-fry dish made with chicken, peanuts, and vegetables."),
+                new Recipe("Sweet and Sour Pork", Arrays.asList("pork", "pineapple", "bell peppers"), 30, "A classic Chinese dish featuring crispy pork in a tangy sweet and sour sauce.")
+        ));
+        recipes.put("chinese", chineseRecipes);
+
         // Japanese recipes
         Map<String, List<Recipe>> japaneseRecipes = new HashMap<>();
         japaneseRecipes.put("breakfast", Arrays.asList(
@@ -25,24 +44,6 @@ public class Main {
                 new Recipe("Ramen", Arrays.asList("noodles", "broth", "egg", "pork"), 45, "A popular noodle soup dish originating from Japan.")
         ));
         recipes.put("japanese", japaneseRecipes);
-
-        // Chinese recipes
-        Map<String, List<Recipe>> chineseRecipes = new HashMap<>();
-        chineseRecipes.put("breakfast", Arrays.asList(
-                new Recipe("Chinese Scallion Pancakes", Arrays.asList("flour", "scallions", "oil"), 20, "Savory pancakes made with flour and scallions.")
-        ));
-        chineseRecipes.put("brunch", Arrays.asList(
-                new Recipe("Dim Sum", Arrays.asList("dumplings", "buns", "shrimp balls"), 30, "Assorted bite-sized Chinese dishes, often served with tea.")
-        ));
-        chineseRecipes.put("lunch", Arrays.asList(
-                new Recipe("General Tso's Chicken", Arrays.asList("chicken", "soy sauce", "sugar"), 25, "A popular Chinese-American dish featuring deep-fried chicken in a sweet and spicy sauce."),
-                new Recipe("Hot and Sour Soup", Arrays.asList("tofu", "mushrooms", "bamboo shoots", "vinegar"), 20, "A tangy and spicy soup made with tofu, mushrooms, and other ingredients.")
-        ));
-        chineseRecipes.put("dinner", Arrays.asList(
-                new Recipe("Kung Pao Chicken", Arrays.asList("chicken", "peanuts", "vegetables"), 25, "A spicy stir-fry dish made with chicken, peanuts, and vegetables."),
-                new Recipe("Sweet and Sour Pork", Arrays.asList("pork", "pineapple", "bell peppers"), 30, "A classic Chinese dish featuring crispy pork in a tangy sweet and sour sauce.")
-        ));
-        recipes.put("chinese", chineseRecipes);
 
         // American recipes
         Map<String, List<Recipe>> americanRecipes = new HashMap<>();
