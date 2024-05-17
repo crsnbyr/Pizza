@@ -25,6 +25,25 @@ public class Main {
         ));
         recipes.put("chinese", chineseRecipes);
 
+
+        // American recipes
+        Map<String, List<Recipe>> americanRecipes = new HashMap<>();
+        americanRecipes.put("breakfast", Arrays.asList(
+                new Recipe("Pancakes", Arrays.asList("flour", "milk", "eggs", "baking powder"), 15, "Fluffy pancakes served with butter and syrup.")
+        ));
+        americanRecipes.put("brunch", Arrays.asList(
+                new Recipe("Avocado Toast", Arrays.asList("bread", "avocado", "lemon juice", "salt"), 10, "Mashed avocado on toasted bread, often served with additional toppings like eggs or tomatoes.")
+        ));
+        americanRecipes.put("lunch", Arrays.asList(
+                new Recipe("Cheeseburger", Arrays.asList("ground beef", "cheese", "lettuce", "tomato", "bun"), 20, "An iconic American sandwich featuring a beef patty topped with cheese and vegetables."),
+                new Recipe("Macaroni and Cheese", Arrays.asList("macaroni", "cheese", "milk", "butter"), 30, "A creamy and cheesy pasta dish loved by both kids and adults.")
+        ));
+        americanRecipes.put("dinner", Arrays.asList(
+                new Recipe("Grilled Steak", Arrays.asList("steak", "salt", "pepper", "oil"), 20, "Juicy steak seasoned and grilled to perfection."),
+                new Recipe("BBQ Ribs", Arrays.asList("pork ribs", "BBQ sauce", "spices"), 60, "Slow-cooked ribs glazed with barbecue sauce.")
+        ));
+        recipes.put("american", americanRecipes);
+
         // Japanese recipes
         Map<String, List<Recipe>> japaneseRecipes = new HashMap<>();
         japaneseRecipes.put("breakfast", Arrays.asList(
@@ -44,24 +63,6 @@ public class Main {
                 new Recipe("Ramen", Arrays.asList("noodles", "broth", "egg", "pork"), 45, "A popular noodle soup dish originating from Japan.")
         ));
         recipes.put("japanese", japaneseRecipes);
-
-        // American recipes
-        Map<String, List<Recipe>> americanRecipes = new HashMap<>();
-        americanRecipes.put("breakfast", Arrays.asList(
-                new Recipe("Pancakes", Arrays.asList("flour", "milk", "eggs", "baking powder"), 15, "Fluffy pancakes served with butter and syrup.")
-        ));
-        americanRecipes.put("brunch", Arrays.asList(
-                new Recipe("Avocado Toast", Arrays.asList("bread", "avocado", "lemon juice", "salt"), 10, "Mashed avocado on toasted bread, often served with additional toppings like eggs or tomatoes.")
-        ));
-        americanRecipes.put("lunch", Arrays.asList(
-                new Recipe("Cheeseburger", Arrays.asList("ground beef", "cheese", "lettuce", "tomato", "bun"), 20, "An iconic American sandwich featuring a beef patty topped with cheese and vegetables."),
-                new Recipe("Macaroni and Cheese", Arrays.asList("macaroni", "cheese", "milk", "butter"), 30, "A creamy and cheesy pasta dish loved by both kids and adults.")
-        ));
-        americanRecipes.put("dinner", Arrays.asList(
-                new Recipe("Grilled Steak", Arrays.asList("steak", "salt", "pepper", "oil"), 20, "Juicy steak seasoned and grilled to perfection."),
-                new Recipe("BBQ Ribs", Arrays.asList("pork ribs", "BBQ sauce", "spices"), 60, "Slow-cooked ribs glazed with barbecue sauce.")
-        ));
-        recipes.put("american", americanRecipes);
 
         // Italian recipes
         Map<String, List<Recipe>> italianRecipes = new HashMap<>();
