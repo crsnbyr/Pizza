@@ -135,9 +135,9 @@ public class Main {
         System.out.println("`(                               )'");
         System.out.println(":.                           ,;");
         System.out.println("`.`--.___           ___.--','");
-        System.out.println("`.     ``-------''     ,'");
-        System.out.println("        -.               ,-");
-        System.out.println("          `-._______.-'");
+        System.out.println("`.       ``-------''     ,'");
+        System.out.println("   ' - --.               ,-");
+        System.out.println("         `-._______.-'");
         //this art is supposed to be a bowl
     }
 }
