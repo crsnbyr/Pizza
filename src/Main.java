@@ -140,7 +140,7 @@ class Recipe {
     private List<String> ingredients;
     private int cookingTime;
     private String description;
-    // Add other attributes like allergies
+    // Want to add allergies
 
     public Recipe(String name, List<String> ingredients, int cookingTime, String description) {
         this.name = name;
