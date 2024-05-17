@@ -25,7 +25,6 @@ public class Main {
         ));
         recipes.put("chinese", chineseRecipes);
 
-
         // American recipes
         Map<String, List<Recipe>> americanRecipes = new HashMap<>();
         americanRecipes.put("breakfast", Arrays.asList(
